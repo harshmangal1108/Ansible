@@ -1,5 +1,6 @@
-## Ansible : It is automation tool.
-##         : It is used to deploy code on multiple servers
+## Ansible 
+####  - It is automation tool.
+####  - It is used to deploy code on multiple servers
 
 #### Installation on Ubuntu 18.04
 ```bash

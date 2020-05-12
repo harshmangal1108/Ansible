@@ -13,7 +13,7 @@
 791	 sudo apt-add-repository --yes --update ppa:ansible/ansible
 792	 sudo apt install ansible
 ```
-#### host file where all target ip to be kept
+#### (INVERNTORY)host file where all target ip to be kept
 ```bash
 509	 cd /etc/ansible/
 510	 ld
@@ -21,4 +21,14 @@
 512	 cp hosts hosts.bkp
 513	 >hosts
 514	 vim hosts
+```
+#### Run Playbook
+```
+ansible-playbook sample.yml
+```
+#### Run task directly
+```
+ansible all -u username -m ping -k
+# all is all group of host file
+# -m says module to include
 ```

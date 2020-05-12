@@ -1,0 +1,9 @@
+---
+ - hosts: web   ##same as in host
+   remote_user: adhoc #this is target machine user
+   tasks:
+    - name: want to run date
+      command: date
+    - name: make directory
+      command: mkdir /tmp/testing_dir
+

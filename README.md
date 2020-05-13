@@ -37,3 +37,7 @@ $~ansible all -u username -m ping -k
 $~ansible-doc module_name
 $~ansible-doc yum
 ```
+#### Using variables here "-C" means not to change anything
+```bash
+$~ansible-playbook -C install_httpd.yml
+```

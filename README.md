@@ -23,17 +23,17 @@
 514	 vim hosts
 ```
 #### Run Playbook
-```
+```bash
 $~ansible-playbook sample.yml
 ```
 #### Run task directly
-```
+```bash
 $~ansible all -u username -m ping -k
 # all is all group of host file
 # -m says module to include
 ```
 #### Understand Modules as we can't remember
-```
+```bash
 $~ansible-doc module_name
 $~ansible-doc yum
 ```

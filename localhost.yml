@@ -1,6 +1,7 @@
 ---
  - hosts: localhost
-   name: date command
-   command: date
-   name: mkdir xyz at /etc/ansible
-   command: mkdir /etc/ansible/xyz
+   tasks:
+    - name: date command
+      command: date
+      name: mkdir xyz at /etc/ansible
+      command: mkdir /etc/ansible/xyz

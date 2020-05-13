@@ -1,0 +1,16 @@
+---
+ - hosts: localhost
+   vars:
+    x: httpd
+    y: hello
+   tasks:
+    - name: install httpd
+      yum:
+       name: "{{x}}" # calling variable
+       status: present
+#   - name: Start service in real OS
+      #service:
+      #name: "{{x}}" #variable agaain
+      #status: started
+    - name: starting service in containers
+      shell: httpd -DFOREGROUND

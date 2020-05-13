@@ -1,7 +1,9 @@
 ---
  - hosts: localhost
    tasks:
-    - name: date command
-      command: date
-      name: mkdir xyz at /etc/ansible
-      command: mkdir /etc/ansible/xyz
+    - name: runing date command
+      command: date ##it will run date command  ##command is module to run commands
+      name: mkdir
+      command: mkdir /etc/ansible/tryl
+    - name: print message
+      debug: msg="Hello World this is Ansible" ##it is debug module

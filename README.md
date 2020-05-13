@@ -24,11 +24,16 @@
 ```
 #### Run Playbook
 ```
-ansible-playbook sample.yml
+$~ansible-playbook sample.yml
 ```
 #### Run task directly
 ```
-ansible all -u username -m ping -k
+$~ansible all -u username -m ping -k
 # all is all group of host file
 # -m says module to include
+```
+#### Understand Modules as we can't remember
+```
+$~ansible-doc module_name
+$~ansible-doc yum
 ```

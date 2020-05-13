@@ -1,0 +1,12 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: install ftp
+      yum:
+       name: ftp
+       state: present
+    - name: date
+      command: date
+      register: x ## is to store o/p of connected modules
+    - name: print values of X module is debug
+      debug: var=x  ###also to print any funcn "var=x.stdout"              
